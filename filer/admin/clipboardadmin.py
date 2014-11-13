@@ -80,7 +80,7 @@ class ClipboardAdmin(admin.ModelAdmin):
                                     clipboard=clipboard, file=file_obj)
                 clipboard_item.save()
                 json_response = {
-                    'thumbnail': file_obj.icons['32'],
+                    'thumbnail': file_obj.url,
                     'alt_text': '',
                     'label': unicode(file_obj),
                 }
